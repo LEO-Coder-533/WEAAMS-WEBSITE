@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans+Arabic:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Playpen Sans Arabic", cursive;
+}
+.navbar{
+     position: sticky;
+  top: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    max-width: 1600px;
+    margin: auto;
+}
+.navbar img {
+    border-radius: 50%;
+    margin: 20px 0;
+    box-shadow: black 3px 3px 3px;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    width: 45%;
+    align-items: center;
+    gap: 30px;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 32px;
+}
+hr{
+    opacity: 0.3;
+}
+.hero{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1600px;
+    margin: auto;
+    margin-top: 5rem;
+}
+.hero img{
+    width: 350px;
+    height: 350px;
+
+}
+.hero div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hero div h1{
+    text-align: center;
+    font-size: 64px;
+}
+.hero div h3{
+    text-align: center;
+    font-size: 32px;
+}
+.hero .red{
+    color: red;
+}
+ .yellow{
+    color: #e3e300;
+}
+.txt1{
+    display: flex;
+    gap: 15px;
+}
+.Aboutme{
+  display: flex;
+  max-width: 1600px;
+  margin: 5rem auto;
+  justify-content: space-around;
+  align-items: center;
+}
+img[alt="photo"]{
+  width: 35%;
+  height: 35%;
+}
+.txt{
+  width: 55%;
+}
+.txt1 h1{
+    font-size: 48px;
+}
+.txt p{
+    font-size: 24px;
+    color: white;
+    background-color: #aaaaaa;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: black 3px 3px 3px;
+}
+/* From Uiverse.io by zanina-yassine */ 
+.card {
+  width: 450px;
+  height: fit-content;
+  background-color: white;
+  box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 17px 17px 27px 27px;
+}
+
+.title {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-bottom: 1px solid #f1f1f1;
+  font-weight: 700;
+  font-size: 13px;
+  color: #47484b;
+}
+
+.title::after {
+  content: '';
+  width: 8ch;
+  height: 1px;
+  position: absolute;
+  bottom: -1px;
+  background-color: #47484b;
+}
+
+.comments {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.comment-react {
+  width: 35px;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.comment-react button {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+.comment-react button:after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: -2.5px;
+  top: -2.5px;
+  background-color: #f5356e;
+  border-radius: 50%;
+  z-index: 0;
+  transform: scale(0);
+}
+
+.comment-react button svg {
+  position: relative;
+  z-index: 9;
+}
+
+.comment-react button:hover:after {
+  animation: ripple 0.6s ease-in-out forwards;
+}
+
+.comment-react button:hover svg {
+  fill: #f5356e;
+}
+
+.comment-react button:hover svg path {
+  stroke: #f5356e;
+  fill: #f5356e;
+}
+
+.comment-react hr {
+  width: 80%;
+  height: 1px;
+  background-color: #dfe1e6;
+  margin: auto;
+  border: 0;
+}
+
+.comment-react span {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 13px;
+  font-weight: 600;
+  color: #707277;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.comment-container .user {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 10px;
+}
+
+.comment-container .user .user-pic {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+}
+
+.comment-container .user .user-pic:after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 50%;
+  background-color: #0fc45a;
+  border: 2px solid #ffffff;
+}
+
+.comment-container .user .user-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3px;
+}
+
+.comment-container .user .user-info span {
+  font-weight: 700;
+  font-size: 12px;
+  color: #47484b;
+}
+
+.comment-container .user .user-info p {
+  font-weight: 600;
+  font-size: 10px;
+  color: #acaeb4;
+}
+
+.comment-container .comment-content {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #5f6064;
+}
+
+.text-box {
+  width: 100%;
+  height: fit-content;
+  background-color: #f1f1f1;
+  padding: 8px;
+}
+
+.text-box .box-container {
+  background-color: #ffffff;
+  border-radius: 8px 8px 21px 21px;
+  padding: 8px;
+}
+
+.text-box textarea {
+  width: 100%;
+  height: 40px;
+  resize: none;
+  border: 0;
+  border-radius: 6px;
+  padding: 12px 12px 10px 12px;
+  font-size: 13px;
+  outline: none;
+  caret-color: #0a84ff;
+}
+
+.text-box .formatting {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto 1fr;
+}
+
+.text-box .formatting button {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+}
+
+.text-box .formatting button:hover {
+  background-color: #f1f1f1;
+}
+
+.text-box .formatting .send {
+  width: 30px;
+  height: 30px;
+  background-color: #0a84ff;
+  margin: 0 0 0 auto;
+}
+
+.text-box .formatting .send:hover {
+  background-color: #026eda;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+img[alt="star"]{
+    width: 10px;
+    height: 10px;
+}
+.comment{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 5rem auto;
+    max-width: 1600px;
+    padding: 3rem;
+    border-radius: 24px;
+    width: 100%;
+  height: 100%;
+  --color: rgba(114, 114, 114, 0.3);
+  background-color: #191a1a;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+
+}
+.card {
+  width: 45%;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  margin: 3rem auto;
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+.socialContainer img{
+    height: 50px;
+    width: 50px;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: white;
+  transition-duration: 0.3s;
+  transform: scale(1.5);
+  border-radius: 15px;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: white;
+  transition-duration: 0.3s;
+  transform: scale(1.5);
+  border-radius: 15px;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: white;
+  transition-duration: 0.3s;
+  transform: scale(1.5);
+  border-radius: 15px;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #ff0000;
+  transition-duration: 0.3s;
+  transform: scale(1.5);
+  border-radius: 15px;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media (max-width:600px){
+    img[alt="Logo"] , img[alt="photo"]{
+    display: none;
+}
+    .Aboutme{
+      flex-direction: column;
+    }
+    .navbar a{
+      font-size: smaller;
+    }
+    .comment{
+      flex-direction: column;
+    }
+.navbar ul li a , tr , th , td , label , input , select , option , h3 , label{
+    font-size: 20px;
+}
+.txt{
+  width: 90%;
+}
+img[alt="Logo"]{
+    height: 45px;
+    width: 45px;
+}
+.heroTitle , .titlecon{
+    font-size: 32px;
+}
+.socialContainer{
+    height: 50px;
+    width: 50px;
+}
+.socialContainer img{
+    height: 25px;
+    width: 25px;
+}
+img[src="photos/Kick_logo.png"]{
+    height: 10px;
+}
+}
+img[src="photos/Kick_logo.png"]{
+    height: 20px;
+}
+.contact12{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.contact12 h1{
+    font-size: 48px;
+}
+footer{
+    padding: 3rem 1.5rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+footer div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+footer img{
+    width: 90px;
+    height: 90px;
+}
+section{
+    flex-wrap: wrap;
+}
+a[href="#Aboutme"]:hover{
+    color: #026eda;
+}
+a[href="#comment"]:hover{
+    color: #e3e300;
+}
+a[href="#connect"]:hover{
+    color: #ff0000;
+}
+a[href="#Aboutme"] , a[href="#comment"] , a[href="#connect"]{
+    transition: all 0.5s ease;
+}
